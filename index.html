@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TicTacToe</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h4 id="heading">TicTacToe</h4>
+	<table>
+		<tr> 
+			<td class="cell" id="0"></td>
+			<td class="cell" id="1"></td>
+			<td class="cell" id="2"></td>
+		</tr>
+		<tr> 
+			<td class="cell" id="3"></td>
+			<td class="cell" id="4"></td>
+			<td class="cell" id="5"></td>
+		</tr>
+		<tr> 
+			<td class="cell" id="6"></td>
+			<td class="cell" id="7"></td>
+			<td class="cell" id="8"></td>
+		</tr>
+	</table>
+	<div class="endgame">
+		<div class="text"></div>
+		<button onclick="load()">Play Again</button>
+	</div>
+	<div class="level">		
+		<button onclick="level('easy')">Easy</button>
+		<button onclick="level('unbeatable')">Unbeatable</button>
+	</div>
+	<div class="selectSym">
+		<p>Select Symbol</p>
+		<button onclick="selectSym('X')">X</button>
+		<button onclick="selectSym('O')">O</button>
+	</div>
+	<div class="score">
+		ScoreCard
+		<p>You : <span id="huScore"></span></p>
+		<p>Computer : <span id="aiScore"></span></p>
+		<p>Tie : <span id="tieScore"></span></p>
+	</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
